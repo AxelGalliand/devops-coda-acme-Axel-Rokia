@@ -131,11 +131,8 @@ const server = http.createServer((req, res) => {
     if (path === "/health") {
       writeJson(res, 200, { 
         status: "healthy",
-<<<<<<< HEAD
-        uptimeSecounds: Math.round(process.uptime())
-=======
+        uptimeSecounds: Math.round(process.uptime()),
         timestamp: new Date().toISOString()
->>>>>>> 4635fd0 (chore: add timestamp to health)
        });
       return;
     }
